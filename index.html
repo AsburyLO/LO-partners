@@ -17,16 +17,13 @@
       --bg: #f7f9fa;
       --surface: #ffffff;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: 'Open Sans', sans-serif;
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
     }
-
     /* ── HEADER — clean letterhead style ── */
     .site-header {
       background: #fff;
@@ -38,7 +35,6 @@
       flex-wrap: wrap;
       gap: 16px;
     }
-
     /* Logo — matches letterhead exactly */
     .logo {
       font-family: 'Montserrat', sans-serif;
@@ -49,7 +45,6 @@
       line-height: 1;
       text-transform: uppercase;
     }
-
     .header-right {
       text-align: right;
     }
@@ -66,14 +61,12 @@
       color: var(--muted);
       line-height: 1.6;
     }
-
     /* ── THIN RULE — matches letterhead bottom rule style ── */
     .rule {
       height: 1px;
       background: var(--border);
       margin: 0 40px;
     }
-
     /* ── SEARCH + FILTER ── */
     .toolbar {
       background: var(--asbury-light);
@@ -116,7 +109,6 @@
     }
     .search-inner input:focus { outline: none; border-color: var(--asbury-blue); }
     .search-inner input::placeholder { color: #b0bec5; }
-
     .cat-pills {
       display: flex; gap: 6px; flex-wrap: wrap;
     }
@@ -133,10 +125,8 @@
     }
     .cat-pill:hover { background: var(--asbury-blue); color: #fff; }
     .cat-pill.active { background: var(--asbury-blue); color: #fff; }
-
     /* ── MAIN PAGE ── */
     .page { max-width: 980px; margin: 0 auto; padding: 36px 40px 72px; }
-
     /* ── SECTION HEADER ── */
     .category { margin-bottom: 44px; }
     .section-header {
@@ -162,14 +152,12 @@
       letter-spacing: 1px;
       margin-left: auto;
     }
-
     /* ── CARDS GRID ── */
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
       gap: 14px;
     }
-
     /* ── CARD ── */
     .card {
       background: var(--surface);
@@ -185,7 +173,6 @@
       border-left-color: var(--asbury-dark);
       transform: translateY(-2px);
     }
-
     .card-tag {
       font-family: 'Montserrat', sans-serif;
       font-size: 9.5px;
@@ -198,7 +185,6 @@
       border-radius: 3px;
       width: fit-content;
     }
-
     .card-name {
       font-family: 'Montserrat', sans-serif;
       font-size: 14.5px;
@@ -213,14 +199,12 @@
     }
     .card-name a:hover { color: var(--asbury-blue); text-decoration: underline; }
     .ext { font-size: 11px; color: var(--muted); margin-left: 3px; font-weight: 400; }
-
     .card-desc {
       font-size: 13px;
       color: #4a5568;
       line-height: 1.65;
       flex: 1;
     }
-
     .card-contact {
       font-size: 12px;
       color: var(--muted);
@@ -232,14 +216,12 @@
       text-decoration: none; font-weight: 600;
     }
     .card-contact a:hover { text-decoration: underline; }
-
     /* ── NO RESULTS ── */
     .no-results {
       display: none; text-align: center;
       padding: 60px 20px; color: var(--muted); font-size: 15px;
     }
     .no-results.show { display: block; }
-
     /* ── FOOTER — matches letterhead footer ── */
     footer {
       background: #fff;
@@ -254,7 +236,6 @@
     }
     footer a { color: var(--asbury-blue); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
-
     @media (max-width: 640px) {
       .site-header { flex-direction: column; align-items: flex-start; padding: 20px 20px 16px; gap: 10px; }
       .header-right { text-align: left; }
@@ -265,7 +246,6 @@
   </style>
 </head>
 <body>
-
 <!-- HEADER — matches letterhead -->
 <div class="site-header">
   <div class="logo">ASBURY</div>
@@ -274,7 +254,6 @@
     <p>Volunteer opportunities serving Tulsa and surrounding communities</p>
   </div>
 </div>
-
 <!-- TOOLBAR -->
 <div class="toolbar">
   <span class="toolbar-label">Filter:</span>
@@ -294,10 +273,8 @@
     <button class="cat-pill" onclick="filterCat('community',this)">Community Dev</button>
   </div>
 </div>
-
 <div class="page">
   <div id="no-results" class="no-results">No partners found for that search.</div>
-
   <!-- Women & Families -->
   <div class="category" data-cat="women">
     <div class="section-header">
@@ -332,7 +309,6 @@
       </div>
     </div>
   </div>
-
   <!-- Food & Basic Needs -->
   <div class="category" data-cat="food">
     <div class="section-header">
@@ -367,7 +343,6 @@
       </div>
     </div>
   </div>
-
   <!-- Education & Youth -->
   <div class="category" data-cat="education">
     <div class="section-header">
@@ -399,7 +374,6 @@
       </div>
     </div>
   </div>
-
   <!-- Health & Disability -->
   <div class="category" data-cat="health">
     <div class="section-header">
@@ -429,12 +403,11 @@
       </div>
     </div>
   </div>
-
   <!-- Restoration & Re-Entry -->
   <div class="category" data-cat="restoration">
     <div class="section-header">
       <span class="section-title">Restoration &amp; Re-Entry</span>
-      <span class="section-count">6 Partners</span>
+      <span class="section-count">7 Partners</span>
     </div>
     <div class="cards">
       <div class="card" data-tags="sexual brokenness freedom faith healing community changing lanes">
@@ -462,6 +435,11 @@
         <div class="card-name"><a href="https://themerchanttulsa.com/" target="_blank">The Merchant <span class="ext">↗</span></a></div>
         <div class="card-desc">Hospitality and healing ministry for the poor and homeless in Tulsa.</div>
       </div>
+      <div class="card" data-tags="homeless housing dignity chronically eden village">
+        <div class="card-tag">Homeless</div>
+        <div class="card-name">Eden Village</div>
+        <div class="card-desc">Providing housing and dignity to the chronically homeless.</div>
+      </div>
       <div class="card" data-tags="material needs churches relationship evangelism cityserve">
         <div class="card-tag">Material Needs</div>
         <div class="card-name">CityServe</div>
@@ -470,7 +448,6 @@
       </div>
     </div>
   </div>
-
   <!-- Community Development -->
   <div class="category" data-cat="community">
     <div class="section-header">
@@ -486,17 +463,13 @@
       </div>
     </div>
   </div>
-
 </div>
-
 <!-- FOOTER — matches letterhead footer text -->
 <footer>
   <p>Yoon Shin, Director of Local Outreach &nbsp;|&nbsp; <a href="mailto:yshin@asburytulsa.org">yshin@asburytulsa.org</a> &nbsp;|&nbsp; 918-392-1105</p>
 </footer>
-
 <script>
   const categories = document.querySelectorAll('.category');
-
   function filterCat(cat, el) {
     event.preventDefault();
     document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
@@ -508,7 +481,6 @@
     });
     document.getElementById('no-results').classList.remove('show');
   }
-
   function doSearch() {
     const q = document.getElementById('search').value.toLowerCase().trim();
     document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
